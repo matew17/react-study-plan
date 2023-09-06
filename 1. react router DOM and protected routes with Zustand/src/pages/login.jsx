@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../store/user";
 
@@ -7,7 +6,7 @@ export const Login = () => {
   const isLoggedIn = useAuth((state) => state.isLoggedIn);
 
   if (isLoggedIn) {
-    return <Navigate to="/dashboard" />;
+    return <Navigate to="/home" />;
   }
 
   const handleLogin = () => {
