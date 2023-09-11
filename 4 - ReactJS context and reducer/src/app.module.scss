@@ -1,0 +1,15 @@
+.appContainer {
+  display: flex;
+  flex-flow: column;
+  max-width: 520px;
+  margin: 0 auto;
+  align-items: center;
+  height: 100%;
+  overflow: auto;
+
+  border: 1px solid black;
+
+  &.dark {
+    border: 1px solid #1bd760;
+  }
+}

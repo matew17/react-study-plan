@@ -11,3 +11,13 @@ Small project to test react router DOM with protected routes, and using Zustand 
 I based this project from the first one, but in this case, I used the RouterProvider and createBrowserRouter approach.
 
 The code is different, but the createBrowserRouter allows us to use some methods to preload data from APIs.
+
+### 3 - NextJS App router app example
+
+NextJS application with single router management, using app folder to test react server components approach.
+
+### 4 - ReactJS Context and reducer
+
+ReactJS app, that is using the context API with a reducer in order to share state across multiple components.
+
+There's also an option to use state and setState in order to avoid reducer option.
