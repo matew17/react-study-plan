@@ -1,0 +1,33 @@
+.modalContainer {
+  position: absolute;
+  width: 450px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: rgba($color: #fff, $alpha: 0.8);
+  color: black;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  // Center modal
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+
+  p {
+    flex-grow: 1;
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    margin: 4px 0;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+}

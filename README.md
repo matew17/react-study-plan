@@ -21,3 +21,7 @@ NextJS application with single router management, using app folder to test react
 ReactJS app, that is using the context API with a reducer in order to share state across multiple components.
 
 There's also an option to use state and setState in order to avoid reducer option.
+
+### 5 - ReactJS 360 Pano Office
+
+React JS app integration with Marzipano (Google) to display a 360 Experience of my office and my house 3 floor.
