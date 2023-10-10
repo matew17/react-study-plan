@@ -1,0 +1,38 @@
+{
+  "people": [
+    {
+      "name": "Mateo",
+      "phone": "555-123-4567",
+      "street": "123 Main Street",
+      "city": "Anytown",
+      "id": "59ab7d1e-44af-4d6e-9d93-390e04798318"
+    },
+    {
+      "name": "Lucas",
+      "phone": "555-987-6543",
+      "street": "456 Elm Street",
+      "city": "Somewhere",
+      "id": "dfcf0691-63a5-4d44-9a70-7f70a74c23e3"
+    },
+    {
+      "name": "Milan",
+      "phone": "555-789-1234",
+      "street": "567 Birch Lane",
+      "city": "Everytown",
+      "id": "c4f51b98-6473-4219-a543-9d21dbdd254a"
+    },
+    {
+      "name": "Aby",
+      "phone": "555-321-6549",
+      "street": "321 Cedar Road",
+      "city": "Someplace",
+      "id": "1778cf25-ccdb-465a-87d5-e9fbc87f8a93"
+    },
+    {
+      "name": "Luisa",
+      "street": "Cra 55",
+      "city": "Rionegro",
+      "id": "ef28b990-678c-11ee-ada5-df22e2ea012c"
+    }
+  ]
+}
