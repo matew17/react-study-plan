@@ -25,3 +25,8 @@ There's also an option to use state and setState in order to avoid reducer optio
 ### 5 - ReactJS 360 Pano Office
 
 React JS app integration with Marzipano (Google) to display a 360 Experience of my office and my house 3 floor.
+
+### 6 - GraphQL - (Both server and client implementation)
+
+Server: NodeJS application with apollo server, json-server and graphql types, queries and mutations, fully functonal.
+Client: ReactJS Application created with Vite, using Apollo client in order to execute all requests.
