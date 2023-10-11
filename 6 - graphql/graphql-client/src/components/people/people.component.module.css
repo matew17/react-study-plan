@@ -16,3 +16,8 @@
   width: 160px;
   cursor: pointer;
 }
+
+.peopleCardMax {
+  width: 560px;
+  height: 400px;
+}

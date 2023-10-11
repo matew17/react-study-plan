@@ -1,0 +1,30 @@
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  top: 24px;
+  right: 24px;
+  width: 450px;
+  height: 450px;
+  border: 1px solid black;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-around;
+}
+
+.loginForm {
+  padding: 24px;
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+}

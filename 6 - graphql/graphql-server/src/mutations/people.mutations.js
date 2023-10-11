@@ -1,37 +1,25 @@
-import { v1 as uuid } from "uuid";
 import { UserInputError } from "apollo-server";
 
-import { PEOPLE_REST_API_URL } from "../global-variables.js";
+import PersonModel from "../models/person.js";
 
 export const createPerson = async (root, args) => {
-  const res = await fetch(`${PEOPLE_REST_API_URL}?name=${args.name}`);
-  const person = await res.json();
+  const person = new PersonModel({ ...args });
 
-  if (person?.length) {
-    return new UserInputError("Name must be unique", {
-      invalidArgs: args.name,
+  try {
+    await person.save();
+  } catch (error) {
+    throw new UserInputError(error.message, {
+      invalidArgs: args,
     });
   }
 
-  const newPerson = { ...args, id: uuid() };
-
-  await fetch(PEOPLE_REST_API_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(newPerson),
-  });
-
-  return newPerson;
+  return person;
 };
 
 export const deletePerson = async (root, args) => {
-  const result = await fetch(`${PEOPLE_REST_API_URL}/${args.id}`, {
-    method: "DELETE",
-  });
+  const person = PersonModel.findByIdAndDelete(args.id);
 
-  console.log(await result.json());
+  if (!person) return;
 
-  return null;
+  return person;
 };
