@@ -1,4 +1,5 @@
 import { gql } from "@apollo/client";
+import { ALL_PEOPLE_INFO_FRAGMENT } from "./fragments";
 
 const GET_ALL_PEOPLE = gql`
   query {
@@ -9,18 +10,15 @@ const GET_ALL_PEOPLE = gql`
   }
 `;
 
+// ...AllPeopleInfo is coming from the fragment
 const GET_PERSON_BY_NAME = gql`
   query ($name: String!) {
     findPerson(name: $name) {
-      id
-      name
-      address {
-        street
-        city
-      }
-      phone
+      ...AllPeopleInfo
     }
   }
+
+  ${ALL_PEOPLE_INFO_FRAGMENT}
 `;
 
 export { GET_ALL_PEOPLE, GET_PERSON_BY_NAME };
